@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  min-block-size: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+h1.container {
+  inline-size: 100vw;
+  font-size: 30vmin;
+  text-align: center;
+  margin: 0;
+}
