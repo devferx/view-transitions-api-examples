@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  min-block-size: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+h1.container {
+  inline-size: 100vw;
+  font-size: 30vmin;
+  text-align: center;
+  margin: 0;
+  view-transition-name: fade;
+}
+
+::view-transition-old(fade) {
+  animation: fade-out 2s;
+}
+
+::view-transition-new(fade) {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
