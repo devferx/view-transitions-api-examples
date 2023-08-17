@@ -5,17 +5,26 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  place-content: center;
   min-block-size: 100vh;
   font-family: system-ui, sans-serif;
+  margin: 0;
 }
 
 .container {
+  position: relative;
+  inline-size: 100vw;
+  block-size: 170px;
+
   & h1 {
-    font-size: 120px;
+    font-size: 125px;
     text-align: center;
+    line-height: 1;
+    position: absolute;
+    line-height: normal;
+    inset: 0;
   }
 }
 
@@ -30,5 +39,19 @@ body {
 
   to {
     opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 1s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
