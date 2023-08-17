@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition API Button</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="button">Mostar información</button>
+      <div class="content"></div>
+    </div>
+
+    <script>
+      const button = document.querySelector("#button");
+
+      button.addEventListener("click", function (event) {
+        document.startViewTransition(() => {
+          updateDOM();
+        });
+      });
+
+      function updateDOM() {
+        const content = document.querySelector(".content");
+        content.innerHTML = "<h1>Nuevo contenido!</h1>";
+      }
+    </script>
+  </body>
+</html>
