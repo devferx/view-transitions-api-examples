@@ -36,3 +36,7 @@
 ### View Transition API (React Router)
 - [Source Code](https://github.com/devferx/view-transitions-api-examples/tree/master/10-view-transition-react-example)
 <!-- - [Demo]() -->
+
+## Resourses
+- [Smooth and simple transitions with the View Transitions API - Google](https://developer.chrome.com/docs/web-platform/view-transitions/)
+- [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)
