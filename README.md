@@ -40,3 +40,4 @@
 ## Resourses
 - [Smooth and simple transitions with the View Transitions API - Google](https://developer.chrome.com/docs/web-platform/view-transitions/)
 - [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)
+- [What's new in web animations](https://www.youtube.com/watch?v=oDcb3fvtETs)
